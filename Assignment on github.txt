@@ -1,0 +1,88 @@
+SECTION 0:
+
+step 1: Created a directory on desktop having name project_dir and open it with Git bash.
+Step 2: git init
+3: touch index.htnl
+4: git status(index.html file found untracked)
+5: git add .(to stage the file.)
+6: git commit -m "stage index.html file".
+7:Make changes in index.html file and create new text file with command "touch info.txt"
+8: git status (both files were untracked.)
+9: touch .gitignore info.txt (will ignore the files from getting in repo.)
+10: git status (only index.html is untracked)
+11: git add index.html and git commit -m ''Changed index file"
+12: git log(showed comment history so far)
+13: Make changes in index. html then see status using git status command(index file is untracked)
+14: git checkout index.html(delete the change before staging)
+15: Changes in  index file.
+16: Staging the index file : git add index.html
+17: Revert back the last Stage using " git reset HEAD index.html" (This will Unstage the file)
+18: git config --global alias.my-add add (rename add command to my_add)
+19: git my_add index.html and git commit -m "added name"
+20: git reset HEAD~1
+
+SECTION 1:
+ 21: Took backup
+ 22: Created an empty directory on desktop and open it with git bash.
+23: touch readme.txt(created a readme.txt file in assignments folder and make changes)
+24: git add . and git commit -m"added readme.txt" (commit readme.txt)
+25: git branch html-assignments
+26: git checkout html-assignments
+27: copy index.html inside "Assignments" folder
+28: git commit -m" added index.html inside 'Assignment' folder "
+29: Changes made in file belonging to 'html-assignments' branch
+30: git add . and git commit -m" make changes in file belonging to 'html-assignments' branch"
+31: git checkout master
+32: git add readme.txt and git commit -m (make changes in readme.txt)
+33: git checkout html-assignments
+34:  Again Changes made in file belonging to 'html-assignments' branch.
+35: git add . and git commit -m" second change in  file belonging to 'html-assignments' "
+36: git checkout master
+37: git merge html-assignment
+38: git branch -d html-assignments
+
+SECTION 2:
+
+1: git branch css-assignments
+2: git checkout css-assignments
+3:Copy Css assignments inside "Assignment" folder
+4: git commit -m" Committing Css assignment " into "css-assignment" branch
+5:Changes into readme.txt file on line 1 belonging to "css-assignment" branch
+6: git commit -m"Changes into readme.txt file of css-assignment branch"
+7: git checkout master
+8: Changes made into readme.txt file on line 3 belonging to "master" branch
+9: git checkout css-assignment
+10: Minor changes into few files belong to css-assignment branch
+11: git commit -m"Changes in file from css-assignment branch"
+12:git checkout master
+13: git merge css-assignment
+14: git branch -d css-assignment
+
+SECTION 3:
+1: git branch js-assignments (Create branch)
+2: git checkout js-assignment (Switch to branch)
+3: Copy all Javascript assignment in Assignments
+4: git commit –m “Javascript Assignment” (commit into branch)
+5: Make minor changes into README.txt.
+6: git commit –m “commit changes”(commit the changes)
+7: git checkout master (Switch to master  branch)
+8: Make minor changes into README.txt.
+9:  git checkout js-assignment (Switch to branch)
+10: Make minor changes into Javascript  Assignment.
+11: git commit –m “commit changes”
+12:  git checkout master (Switch to master branch)
+13: git merge js-assignment (merge into master branch)
+        git status (to conform all js assignment showu)
+14: git branch –d js-assignment (delete the branch)
+
+GIT Remoting
+Section 3:
+39: Create a github account 
+40: login to github Account 
+41: Create repository ‘freshersbatch-oct16’
+42: git config –global user.username aartideulkar222
+      git commit –m “commit all the changes”
+      git remote add origin https://github.com/aartideulkar222/batchjuly21
+      git push origin master (push the assignment into repo.)
+
+
